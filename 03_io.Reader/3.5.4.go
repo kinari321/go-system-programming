@@ -50,12 +50,12 @@ func readChunks(file *os.File) []io.Reader {
 }
 
 func main() {
-	file, err := os.Open("03_io.Reader/PNG_transparency_demonstration_1.png")
+	file, err := os.Open("PNG_transparency_demonstration_1.png")
 	if err != nil {
 		panic(err)
 	}
 	defer file.Close()
-	newFile, err := os.Create("03_io.Reader/PNG_transparency_demonstration_secret.png")
+	newFile, err := os.Create("PNG_transparency_demonstration_secret.png")
 	if err != nil {
 		panic(err)
 	}
