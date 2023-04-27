@@ -6,6 +6,10 @@ import (
 	"strings"
 )
 
+/*
+Q3.5:CopyN関数を使ってみる
+*/
+
 func main() {
 	str := "Hello, world!"
 	r := strings.NewReader(str)

@@ -7,6 +7,10 @@ import (
 	"strings"
 )
 
+/*
+Q3.4:zip ファイルをウェブサーバーからダウンロード
+ウェブサーバーにブラウザでアクセスしたらファイルが zip ダウンロードされるようにする
+*/
 func handler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/zip")
 	w.Header().Set("Content-Disposition", "attachment; filename=ascii_sample.zip")

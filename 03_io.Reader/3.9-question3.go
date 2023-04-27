@@ -7,6 +7,11 @@ import (
 	"strings"
 )
 
+/*
+ zipファイルへの書き込み
+ archive/zip パッケージを使って zip ファイルを作成する
+*/
+
 func main() {
 	file, err := os.Create("3-9-3.zip")
 	if err != nil {
